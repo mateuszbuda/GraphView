@@ -61,6 +61,12 @@ public class GraphViewSeries {
 	final String description;
 	final GraphViewSeriesStyle style;
 	GraphViewDataInterface[] values;
+	
+	public GraphViewDataInterface[] getValues()
+	{
+		return this.values;
+	}
+	
 	private final List<GraphView> graphViews = new ArrayList<GraphView>();
 
 	public GraphViewSeries(GraphViewDataInterface[] values) {
